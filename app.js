@@ -1,5 +1,5 @@
 /**
- * FILMLANE ARCHIVE - Application Logic
+ * CINÈMA ARCHIVE - Application Logic
  * Refactored for Black/Yellow Filmlane Aesthetics
  */
 
