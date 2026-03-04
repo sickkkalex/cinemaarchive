@@ -98,24 +98,21 @@ header {
     text-decoration: none;
 }
 
-.logo-icon {
-    width: 35px;
-    height: 35px;
-    background: var(--accent);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--bg);
-    font-size: 20px;
+.logo-svg {
+    transition: var(--transition-fast);
+}
+
+.logo-wrap:hover .logo-svg {
+    transform: rotate(15deg) scale(1.1);
 }
 
 .logo-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 26px;
     color: var(--white);
     letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -366,13 +363,68 @@ main {
 
 .hero-actions {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
-    background: rgba(19, 23, 34, 0.8);
+    background: rgba(19, 23, 34, 0.9);
     padding: 25px;
     border-radius: 12px;
     width: fit-content;
     align-items: center;
+    border: 1px solid var(--border);
+}
+
+.streaming-platforms {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.platform-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: #1e2430;
+    color: var(--muted);
+    transition: var(--transition-fast);
+}
+
+.platform-icon:hover {
+    color: var(--white);
+    transform: scale(1.2);
+}
+
+.platform-icon.netflix:hover {
+    background: #E50914;
+    color: white;
+}
+
+.platform-icon.prime:hover {
+    background: #00A8E1;
+    color: white;
+}
+
+.platform-icon.disney:hover {
+    background: #113CCF;
+    color: white;
+}
+
+.platform-icon.apple:hover {
+    background: #000000;
+    color: white;
+}
+
+.platform-icon.hbo:hover {
+    background: #7401B8;
+    color: white;
+}
+
+.platform-icon.crunchy:hover {
+    background: #F47521;
+    color: white;
 }
 
 .watch-btn {
