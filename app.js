@@ -202,10 +202,10 @@ function renderDetail(data, type) {
 
                     <div class="hero-actions">
                         <div class="streaming-platforms">
-                            <div class="platform-icon netflix" title="Netflix"><i class="fa-brands fa-netflix"></i></div>
-                            <div class="platform-icon prime" title="Prime Video"><i class="fa-brands fa-amazon"></i></div>
+                            <div class="platform-icon netflix" title="Netflix"><i class="fab fa-netflix"></i></div>
+                            <div class="platform-icon prime" title="Prime Video"><i class="fab fa-amazon"></i></div>
                             <div class="platform-icon disney" title="Disney+"><i class="fas fa-plus"></i></div>
-                            <div class="platform-icon apple" title="Apple TV"><i class="fa-brands fa-apple"></i></div>
+                            <div class="platform-icon apple" title="Apple TV"><i class="fab fa-apple"></i></div>
                             ${type === 'anime' ? '<div class="platform-icon crunchy" title="Crunchyroll"><i class="fas fa-tv"></i></div>' : ''}
                         </div>
                         <div style="width:1px; height:40px; background:var(--border);"></div>
@@ -213,7 +213,6 @@ function renderDetail(data, type) {
                             <p style="font-weight:700; font-size:16px;">Watch Now</p>
                             <p style="font-size:13px; color:var(--muted);">${type === 'anime' ? 'Streaming on Crunchyroll' : 'Available on all platforms'}</p>
                         </div>
-                        <a href="#" class="watch-btn"><i class="fas fa-play"></i> STREAM NOW</a>
                     </div>
                 </div>
             </div>
